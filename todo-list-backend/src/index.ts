@@ -14,6 +14,17 @@ app.get('/', (req: Request, res: Response) => {
     .send('Hello, TypeScript Express!');
 });
 
+//object of tasks
+const tasks = []
+
+function addTask (task:string) {
+    tasks.push(task)
+}
+
+function removeTask (task:string) {
+    
+}
+
 app.get("/ping",  (req: Request, res: Response) => {
     count++;
     
